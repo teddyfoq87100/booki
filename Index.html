@@ -17,9 +17,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./test.css" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
-
   <body>
     <header>
       <nav>
@@ -29,11 +28,13 @@
           <li><a href="#activites">Activités</a></li>
         </ul>
       </nav>
+      <h1>Hébergements pour des vacances de rêve</h1>
+      <p>En plein centre-ville ou en pleine nature</p>
+
       <form action="#" method="get" class="search-form">
         <div class="search-location-icon">
           <i class="fa-solid fa-location-dot"></i>
         </div>
-
         <input
           type="text"
           class="search-input"
@@ -49,8 +50,7 @@
       <div class="filters">
         <span>Filtres</span>
         <button class="filter-btn">
-          <i class="fa-solid fa-money-bill-wave"></i>
-          Économique
+          <i class="fa-solid fa-money-bill-wave"></i>Économique
         </button>
         <button class="filter-btn">
           <i class="fa-solid fa-person"></i>Familial
@@ -59,21 +59,19 @@
           <i class="fa-solid fa-heart"></i>Romantique
         </button>
         <button class="filter-btn">
-          <i class="fa-solid fa-fire"></i>Nos Pepites
+          <i class="fa-solid fa-fire"></i>Nos Pépites
         </button>
       </div>
-    </header>
-
-    <main>
-      <section class="search-section">
+      <div class="search-info">
         <i class="fa-solid fa-info"></i>
-        <p><strong>hébergement pour des vacances de rêve</strong></p>
-        <p>En plein centre-ville ou en pleine nature</p>
-      </section>
+        <p>Plus de 500 logements sont disponibles dans cette ville</p>
+      </div>
+    </header>
+    <main>
       <section class="hebergements" id="hebergements">
         <div class="hebergements-and-populaires">
           <div class="hebergement-container">
-            <h1 class="section-title">Hébergements à Marseille</h1>
+            <h2 class="section-title">Hébergements à Marseille</h2>
             <div class="Cartes-hebergements">
               <div class="hebergements-cards">
                 <img
@@ -202,65 +200,92 @@
                 </div>
               </div>
             </div>
+            <p><strong>Afficher Plus</strong></p>
           </div>
-          <h2 class="titre-populaire">Les plus populaires</h2>
-          <div class="populary-card">
-            <img
-              class="lesoleil"
-              src="images/hebergements/emile-guillemot.jpg"
-              alt="Soleil"
-            />
-            <h3 class="card-title">Hotel le soleil du matin</h3>
-            <p class="card-subtitle">la nuit à partir 25<strong>€</strong></p>
-            <div class="card-rating">
-              <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-              <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-              <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-              <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-              <i
-                class="fa-xs fa-solid fa-star neutral-star"
-                aria-hidden="true"
-              ></i>
-            </div>
-          </div>
-          <div class="populary-card">
-            <img
-              class="Coeur"
-              src="images/hebergements/aw-creative.jpg"
-              alt="Bois"
-            />
-            <div class="content-populary-card">
-              <h3 class="card-title">Chambre d'hotes au coeur de l'eau</h3>
-              <p class="card-subtitle">la nuit à partir 71<strong>€</strong></p>
-              <div class="card-rating">
-                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                <i
-                  class="fa-xs fa-solid fa-star neutral-star"
-                  aria-hidden="true"
-                ></i>
+          <div class="populaires-container">
+            <h2 class="titre-populaire">Les plus populaires</h2>
+            <div class="populaire-carte-container">
+              <div class="populary-card">
+                <img
+                  class="lesoleil"
+                  src="images/hebergements/emile-guillemot.jpg"
+                  alt="Soleil"
+                />
+                <div class="content-populary-card">
+                  <div>
+                    <h3 class="card-title-populary">
+                      Hotel le soleil du matin
+                    </h3>
+                    <p class="card-subtitle-populary">
+                      la nuit à partir 25<strong>€</strong>
+                    </p>
+                  </div>
+                  <div class="card-rating-populary">
+                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                    <i
+                      class="fa-xs fa-solid fa-star neutral-star"
+                      aria-hidden="true"
+                    ></i>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="populary-card">
-            <img
-              class="Blanc"
-              src="images/hebergements/febrian-zakaria2.jpg"
-              alt="Bleu"
-            />
-            <p class="card-title">Hotel Bleu et Blanc</p>
-            <p class="card-subtitle">la nuit à partir 68<strong>€</strong></p>
-            <div class="card-rating">
-              <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-              <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-              <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-              <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-              <i
-                class="fa-xs fa-solid fa-star neutral-star"
-                aria-hidden="true"
-              ></i>
+              <div class="populary-card">
+                <img
+                  class="Coeur"
+                  src="images/hebergements/aw-creative.jpg"
+                  alt="Bois"
+                />
+                <div class="content-populary-card">
+                  <div>
+                    <h3 class="card-title-populary">
+                      Chambre d'hotes au coeur de l'eau
+                    </h3>
+                    <p class="card-subtitle-populary">
+                      la nuit à partir 71<strong>€</strong>
+                    </p>
+                  </div>
+                  <div class="card-rating-populary">
+                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                    <i
+                      class="fa-xs fa-solid fa-star neutral-star"
+                      aria-hidden="true"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+              <div class="populary-card">
+                <img
+                  class="Blanc"
+                  src="images/hebergements/febrian-zakaria2.jpg"
+                  alt="Bleu"
+                />
+                <div class="content-populary-card">
+                  <div>
+                    <h3 class="card-title-populary">
+                      <strong>Hotel Bleu et Blanc</strong>
+                    </h3>
+                    <p class="card-subtitle-populary">
+                      la nuit à partir 68<strong>€</strong>
+                    </p>
+                  </div>
+                  <div class="card-rating-populary">
+                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                    <i
+                      class="fa-xs fa-solid fa-star neutral-star"
+                      aria-hidden="true"
+                    ></i>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -305,22 +330,30 @@
       </section>
     </main>
     <footer>
-      <p><strong>A propos de</strong></p>
-      <ul>
-        <li>Fonctionnement du site</li>
-        <li>Conditions Génerale</li>
-        <li>Donnees et Confidentalité</li>
-      </ul>
-      <ul>
-        <li>Chartre Qualité</li>
-        <li>Proposer Votre Hotel</li>
-      </ul>
-      <p><strong>Nos Herbergements</strong></p>
-      <p><strong>Assistance</strong></p>
-      <ul>
-        <li>Centre d'aide</li>
-        <li>Nous Contacter</li>
-      </ul>
+      <article class="Footer-end">
+        <div class="Website-end1">
+          <p><strong>À propos</strong></p>
+          <ul>
+            <li><a href="#">Fonctionnement du site</a></li>
+            <li><a href="#">Conditions Générales</a></li>
+            <li><a href="#">Données et Confidentialité</a></li>
+          </ul>
+        </div>
+        <div class="Website-end2">
+          <p><strong>Nos Hébergements</strong></p>
+          <ul>
+            <li><a href="#">Charte Qualité</a></li>
+            <li><a href="#">Proposer Votre Hotel</a></li>
+          </ul>
+        </div>
+        <div class="Website-end3">
+          <p><strong>Assistance</strong></p>
+          <ul>
+            <li><a href="#">Centre d'aide</a></li>
+            <li><a href="#">Nous Contacter</a></li>
+          </ul>
+        </div>
+      </article>
     </footer>
   </body>
 </html>
