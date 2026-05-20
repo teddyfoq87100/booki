@@ -20,7 +20,9 @@ body {
 }
     
    
-    
+ h3 {
+    font-size: 1rem;
+ }   
 
 
 .search-form {
@@ -101,12 +103,9 @@ nav a:hover{
 
 }
 .activities-grid {
-    display: flex;
-    box-sizing: border-box;
-    flex-direction: row;
-    gap: 20px;
-
-
+    display: flex;    
+    flex-direction: row;    
+    justify-content: space-between;
 }
 
 .search-info{
@@ -147,7 +146,13 @@ nav ul li:hover{
     border-top: 3px solid var(--main-color);
     color: var(--main-color);
 }
+.populaire-carte-container{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
 
+
+}
 
 .filters{
     display: flex;
@@ -176,7 +181,11 @@ nav ul li:hover{
     background-color: var(--filter-bg-color);
     color: var(--main-color);
 }
+.fa-solid fa-info{
+    border: 2px solid black;
+    border-radius: 25px;
 
+}
 
 a {
     color: inherit;
@@ -398,19 +407,27 @@ a {
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
     overflow: hidden; 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 45%;
+    width: 297px;
 }
 
 
 .activity-card img{
     display: flex;
     height: 380px;
+    width: 297px;
     object-fit: cover;
     justify-content: center;
     align-items: center;
     border-radius: 15px;
     box-sizing: border-box;
    
+}
+.activity-card-content{
+    height: 59px;
+    width: 297px;
+    align-items: center;
+    display: flex;
+    padding-left: 15px;
 }
 .fa-star {
     color: var(--main-color);
@@ -438,9 +455,7 @@ a {
     opacity: 1;
     background-color: #F2F2F2;
     text-align: center;
-   
-
-}
+   }
 
 
 
@@ -458,11 +473,25 @@ a {
     text-align: center;
     flex-direction: column;
 }
+.Website-end1 ul{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height: 21px;
+}
+.Website-end2 ul{
+    display: flex;
+    flex-direction: column;
+    gap: 5px; 
+}
 
-
-
-    
-
+.Website-end1 li a{
+    display: flex;
+}
+.Website-end1 p{
+    display: flex;
+    gap: 20%;
+}
 
 
 
@@ -527,9 +556,9 @@ a {
         display: flex;
         flex-direction: column-reverse;
     }
-.Cartes-hebergements{
-    display: flex;
-    width: 100%;
+    .Cartes-hebergements{
+        display: flex;
+        width: 100%;
 
     
 
@@ -581,14 +610,16 @@ a {
     .activities-grid{
         display: flex;
         width: 100%;
-        
-
-
-
-
-        
     }
+    .Website-end1 ul{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
 
+
+
+
+    }
 
 
 
