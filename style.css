@@ -577,12 +577,9 @@ a {
     nav ul {
         display: flex;
         text-align: center;
-        
-    }
+        }
     body{
         padding: 0 50px;
-
-
     }
     .hebergements-and-populaires {
         flex-direction: column;
@@ -604,23 +601,53 @@ a {
     }
     .Cartes-hebergements {
         width: 100%;
-     
-        
-    }
+     }
     .activities-grid{
         display: flex;
         width: 100%;
+        gap: 1px;
+
     }
     .Website-end1 ul{
         display: flex;
         flex-direction: column;
-        gap: 30px;
+
+    }
+    .activity-card img{
+        display: flex;
+        width: 193px;
+        height: 200px;
+
+    }
+    .activity-card{
+        display: flex;
+        width: 193px;
+        height: 270px;
+    }
+    .activity-card-content{
+        width: 193px;
+        height: 70px;
+        padding: 20px 19px 20px 19px;
+        
+    }
 
 
+    .activity-card-content h3{
+        width: 100%;
 
 
     }
 
+        
 
 
-        } 
+
+
+
+
+
+
+
+
+
+} 
