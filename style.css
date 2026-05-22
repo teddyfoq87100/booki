@@ -593,6 +593,8 @@ a {
     .populaires-container{
         flex-direction: column;
         width: 100%;
+        padding-top: 28px;
+        
     }
     .populaire-carte-container{
         display: flex;
@@ -605,7 +607,6 @@ a {
     .activities-grid{
         display: flex;
         width: 100%;
-        gap: 1px;
 
     }
     .Website-end1 ul{
@@ -628,14 +629,11 @@ a {
         width: 193px;
         height: 70px;
         padding: 20px 19px 20px 19px;
-        
     }
 
 
     .activity-card-content h3{
         width: 100%;
-
-
     }
 
         
