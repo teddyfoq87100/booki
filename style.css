@@ -492,11 +492,50 @@ a {
     display: flex;
     gap: 20%;
 }
+@media (max-width :320px){
+    .main-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    nav ul{
+        width: 50%;
+        display: flex;
+    }
+    .search-form{
+        width: 100%;
+        
+    }
+    body{
+        width: 100%;
+
+    } 
+    nav{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    nav ul{
+        display: flex;
+        text-align: center;
+    }
+    .header{
+        display: flex;
+        width: 100%;
+        
+    }
+    .filters{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .
 
 
-
-
-
+    
+}
 
 
 
@@ -527,7 +566,7 @@ a {
         
 
    
-@media (max-width: 768px) {
+@media (max-width: 768px){
     .main-container {
         padding: 15px;
         width: 100%;
@@ -547,7 +586,6 @@ a {
     .populaires-cards {
         flex-direction: column;
     }
-
     .populaires-cards a {
         width: 100%;
     }
@@ -655,4 +693,5 @@ a {
         display: flex;
         text-align: justify;
     }
+
 } 
