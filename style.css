@@ -509,6 +509,8 @@ a {
     body{
         width: 100%;
 
+
+
     } 
     nav{
         display: flex;
@@ -531,7 +533,20 @@ a {
         flex-wrap: wrap;
         align-items: center;
     }
-    .
+    .populaire-carte-container{
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .populary-card{
+        width: 335px;
+        height: 146px;
+    }
+    
+        
+
+        
+    
 
 
     
