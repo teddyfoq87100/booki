@@ -95,13 +95,7 @@ a{
     
     
 }  
-nav a:hover{
-    color: var(--main-color);
-    border-top: solid var(--main-color) 5px;
-    padding-top: 20px;
 
-
-}
 .activities-grid {
     display: flex;    
     flex-direction: row;    
@@ -135,13 +129,14 @@ nav ul{
     display: flex;
     gap: 16px;
     list-style: none;
+    border-top: 3px solid transparent;
 }
 nav ul li{
     padding: 30px;
     border-top: 3px solid transparent;
 
 }
-nav ul li:hover{
+nav li:hover{
     cursor: pointer;
     border-top: 3px solid var(--main-color);
     color: var(--main-color);
@@ -492,65 +487,7 @@ a {
     display: flex;
     gap: 20%;
 }
-@media (max-width :320px){
-    .main-container{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-    nav ul{
-        width: 50%;
-        display: flex;
-    }
-    .search-form{
-        width: 100%;
-        
-    }
-    body{
-        width: 100%;
 
-
-
-    } 
-    nav{
-        display: flex;
-        width: 100%;
-        flex-direction: column;
-    }
-    nav ul{
-        display: flex;
-        text-align: center;
-    }
-    .header{
-        display: flex;
-        width: 100%;
-        
-    }
-    .filters{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;
-    }
-    .populaire-carte-container{
-        flex-direction: column;
-        flex-wrap: wrap;
-        width: 100%;
-    }
-    .populary-card{
-        width: 335px;
-        height: 146px;
-    }
-    
-        
-
-        
-    
-
-
-    
-}
 
 
 
@@ -581,24 +518,24 @@ a {
         
 
    
-@media (max-width: 768px){
+@media (max-width: 768px) {
     .main-container {
-        padding: 15px;
-        width: 100%;
-
-    }
-    .header {
-        width: 100%;
         display: flex;
         flex-direction: column;
     }
+
+    .header {
+        width: 100%;
+    }
+
     nav ul{
-        width: 50%;
-        display: flex;
+        width: 100%;
         text-align: center;
     }
 
+
     .populaires-cards {
+        display: flex;
         flex-direction: column;
     }
     .populaires-cards a {
@@ -607,18 +544,16 @@ a {
     .hebergements-and-populaires {
         width: 100%;
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     
     .hebergement-container{
         width: 100%;
         flex-direction: column;
+
         }
+    }
 
-
-
-
-}
 
 @media (max-width: 1024px) {
 
@@ -631,6 +566,7 @@ a {
         display: flex;
         text-align: center;
         }
+    
     body{
         padding: 0 50px;
     }
@@ -641,6 +577,7 @@ a {
         margin-bottom: 10px;
     }
     .hebergement-container{
+        display: flex;
         width: 100%;
     }
     .populaires-container{
